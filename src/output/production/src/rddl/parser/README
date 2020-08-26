@@ -1,0 +1,11 @@
+The lexer specification is in: 'RDDL2POMCP.RDDL2POMCP.RDDL2POMCP.rddl.lex'
+
+The parser specification is in: 'RDDL2POMCP.RDDL2POMCP.RDDL2POMCP.rddl.cup'
+
+To compile and build the parser, just use 'make lex'
+followed by 'make parser' in the RDDL2POMCP.RDDL2POMCP.RDDL2POMCP.rddl.parser subdirectory.
+Make sure that the OS-dependent options are enabled correctly
+in the Makefile.
+
+See INSTALL.txt in RDDLSim parent directory for more 
+details.
