@@ -30,5 +30,6 @@ Possible running configuration (arguments):
 *Using java simulator with ROS- no arguments are needed.
 
 An example for a command line activation (after generating jar file from the project):
+
 `java -cp ~/IdeaProjects/Solver_local/out/artifacts/Solver_local_jar -jar Solver.jar "rddl_dir=/home/lab/IdeaProjects/PLP2RDDL_JAVA_out/production/PLP2RDDL_JAVA/Created_RDDLs" "rddl_instance=created_plps_instance" "rddl_initial_state_instance=init_instance" "use_ros=false" "rddl_initial_state_dir=/home/lab/IdeaProjects/PLP2RDDL_JAVA_out/production/PLP2RDDL_JAVA/Created_RDDLs/InitStateRDDLs"`
 
