@@ -13,7 +13,8 @@ download and build the repository.
 startup class is `src/Solver.java`.
 
 Program Arguments:
-* `use_ros` posiible input is `false` or (defalut) `true`. When `false` the solver will run commands on an internal simulation. When `true` commands are sent to ROS using localhost port 1770 (can be changed on class POMDP_Solver.SendToROS.java). 
+* `use_ros`- posiible input is `false` or (defalut) `true`. When `false` the `Solver` will run commands on an internal simulation. When `true` commands are sent to ROS using `localhost` port 1770 (IP and port can be changed on class POMDP_Solver.SendToROS.java). 
+* `rddl_dir`- contains the absolut to the directory in which the rddl domain file and instance file are located. When this argument is not sent the `Solver` will be in Java simulator mode (see the [ROS-POMDP]() article) 
 
 
 
