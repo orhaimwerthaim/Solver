@@ -8,8 +8,13 @@ A java project for the ROS-POMDP solver.
 * java sdk 14.
 * jar dependencies are located in the project /lib directory.
 
-## installation
-download the repository.
+## Runing
+download and build the repository.
+startup class is `src/Solver.java`.
+
+Program Arguments:
+* `use_ros` posiible input is `false` or (defalut) `true`. When `false` the solver will run commands on an internal simulation. When `true` commands are sent to ROS using localhost port 1770 (can be changed on class POMDP_Solver.SendToROS.java). 
+
 
 
 java -cp ~/IdeaProjects/Solver_local/out/artifacts/Solver_local_jar -jar Solver_local.jar "rddl_dir=/home/or/IdeaProjects/PLP2RDDL_JAVA_out/production/PLP2RDDL_JAVA/Created_RDDLs" "rddl_instance=created_plps_instance" "rddl_initial_state_instance=init_instance" "use_ros=false" "rddl_initial_state_dir=/home/or/IdeaProjects/PLP2RDDL_JAVA_out/production/PLP2RDDL_JAVA/Created_RDDLs/InitStateRDDLs"
