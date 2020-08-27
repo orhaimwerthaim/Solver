@@ -17,7 +17,7 @@ Program Arguments (see the [ROS-POMDP](https://github.com/orhaimwerthaim/Solver/
 * `rddl_dir`- contains the absolut to the directory in which the rddl domain file and instance file are located. When this argument is not sent the `Solver` will be in Java simulator mode.
 * `rddl_instance`- is used to specify the rddl inastance name (default name is `created_plps_instance`).
 * `rddl_initial_state_dir`- When the initail state is probabilistic, this argument should contain the directory of the rddl domain and instance to generate the initial state.  
-* `rddl_initial_state_instance`- can be used to change the default instance name for generating the probabilistic initial state (default is `init_instance`).
+* `rddl_initial_state_instance`- can be used to change the default instance name for generating the probabilistic initial state (default is `initial_state_instance`).
 * `illegal_action_penalty`- default is -400.
 * `min_num_of_particles`- Minimum number of states in the particles filter (larger particle filters are more accurate but cost more computationally), default is 40.
 *`ucb_c`- changes the exploration exploitation behaviour of POMCP, default is 100.
