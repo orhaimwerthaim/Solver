@@ -13,10 +13,10 @@ download and build the repository.
 startup class is `src/Solver.java`.
 
 Program Arguments (see the [ROS-POMDP](https://github.com/orhaimwerthaim/Solver/blob/master/ROS-POMDP.pdf) article):
-* `use_ros`- posiible input is `false` or (defalut) `true`. When `false` the `Solver` will run commands on an internal simulation. When `true` commands are sent to ROS using `localhost` port 1770 (IP and port can be changed on class POMDP_Solver.SendToROS.java). 
+* `use_ros`- possible input is `false` or (defalut) `true`. When `false` the `Solver` will run commands on an internal simulation. When `true` commands are sent to ROS using `localhost` port 1770 (IP and port can be changed on class POMDP_Solver.SendToROS.java). 
 * `rddl_dir`- contains the absolut to the directory in which the rddl domain file and instance file are located. When this argument is not sent the `Solver` will be in Java simulator mode.
-* `rddl_instance`- is used to specify the rddl inastance name (default name is `created_plps_instance`).
-* `rddl_initial_state_dir`- When the initail state is probabilistic, this argument should contain the directory of the rddl domain and instance to generate the initial state.  
+* `rddl_instance`- is used to specify the rddl instance name (default name is `created_plps_instance`).
+* `rddl_initial_state_dir`- When the initial state is probabilistic, this argument should contain the directory of the rddl domain and instance to generate the initial state (cannot be the same as `rddl_dir`).  
 * `rddl_initial_state_instance`- can be used to change the default instance name for generating the probabilistic initial state (default is `initial_state_instance`).
 * `illegal_action_penalty`- default is -400.
 * `min_num_of_particles`- Minimum number of states in the particles filter (larger particle filters are more accurate but cost more computationally), default is 40.
