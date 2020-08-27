@@ -18,7 +18,7 @@ public class Solver {
     private static String RDDL_Dir = null;
     private static String RDDL_InitialStateDir = null;
     private static String RDDL_Instance = "created_plps_instance";
-    private static String RDDL_InitialStateInstance = "init_instance";
+    private static String RDDL_InitialStateInstance = "initial_state_instance";
     private static int ILLEGAL_ACTION_PENALTY = -400;
     private static float ucb_c = 100.0f;
     private static int planningTime = 1000;
@@ -35,8 +35,17 @@ public class Solver {
         RDDL_Dir = GetArgByType("rddl_dir", args);
         IsJavaSimulator = RDDL_Dir == null;
 
-        RDDL_Instance = GetArgByType("rddl_instance", args);
-        RDDL_InitialStateInstance = GetArgByType("rddl_initial_state_instance", args);
+        String sRDDL_Instance = GetArgByType("rddl_instance", args);
+        if(sRDDL_Instance != null)
+        {
+            RDDL_Instance = sRDDL_Instance;
+        }
+
+        String sRDDL_InitialStateInstance = GetArgByType("rddl_initial_state_instance", args);
+        if(sRDDL_InitialStateInstance != null)
+        {
+            RDDL_InitialStateInstance = sRDDL_InitialStateInstance;
+        }
 
 
         String sUsingROS = GetArgByType("use_ros", args);
